@@ -1,1 +1,8 @@
-<p>recipe-book works!</p>
+<mat-form-field>
+  <mat-label>Favorite food</mat-label>
+  <mat-select>
+    @for (list of recipeLists; track list) {
+    <mat-option [value]="list.id">{{ list.value }}</mat-option>
+    }
+  </mat-select>
+</mat-form-field>
